@@ -27,7 +27,7 @@ function showMovies(movies) {
 
     const movieEl = document.createElement("div");
     movieEl.classList.add("movie");
-    movieEl.innerHTML = `<div class="movie">
+    movieEl.innerHTML = `
     <img
       src="${IMG_PATH + poster_path}"
       alt="${title}"
@@ -39,8 +39,7 @@ function showMovies(movies) {
     <div class="overview">
       <h3>Overview</h3>
       ${overview}
-    </div>
-  </div>`;
+    </div>`;
     main.appendChild(movieEl);
   });
 }
